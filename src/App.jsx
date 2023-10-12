@@ -21,13 +21,12 @@ const listeName = [
   },
 ];
 function App() {
-
-  
   return (
     <div>
+      <h1>Did you like React ?</h1>
       {listeName.map((element) => (
         <div>
-          <h1>{element.name}</h1>
+          <h2>{element.name}</h2>
           <Button />
         </div>
       ))}
