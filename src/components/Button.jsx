@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Button.css'
 
 function Button() {
   const [isLike, setIsLike] = useState(0);
@@ -11,10 +12,12 @@ function Button() {
   };
   return (
     <div>
-      <button onClick={handleLikeClick}>Like</button>
-      <button onClick={handleDisLikeClick}>DisLike</button>
-      {isLike === 1 ? "👍" : ""}
-      {isLike === 2 ? "🤮" : ""}
+      <button className="like" onClick={handleLikeClick}>Like</button>
+      <button className="dislike" onClick={handleDisLikeClick}>DisLike</button>
+      <div className="button">
+        {isLike === 1 ? "👍" : ""}
+        {isLike === 2 ? "🤮" : ""}
+      </div>
     </div>
   );
 }

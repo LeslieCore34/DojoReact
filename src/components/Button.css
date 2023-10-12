@@ -1,0 +1,16 @@
+button {
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.like {
+    background-color: green;
+}
+
+.dislike {
+    background-color: red;
+}
+
+.button {
+    font-size: 50px;
+}
