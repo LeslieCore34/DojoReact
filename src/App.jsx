@@ -20,12 +20,13 @@ const listeName = [
     review: "",
   },
 ];
+
 function App() {
   return (
     <div>
       <h1>Did you like React ?</h1>
-      {listeName.map((element) => (
-        <div>
+      {listeName.map((element, index) => (
+        <div key={index}>
           <h2>{element.name}</h2>
           <Button />
         </div>
